@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2(id="headLogin") Log In
+        form(method='POST' action='/login')
+          div.form-group
+            label(for='ntid') ntid
+            input.form-control(type='text' id='userNtid'  name='ntid')
+          button.btn.btn-primary(type='submit', id ="btnSubmit") Log in
